@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 14-01-2022 a las 02:22:32
+-- Tiempo de generación: 19-01-2022 a las 02:59:27
 -- Versión del servidor: 5.7.33
 -- Versión de PHP: 7.4.19
 
@@ -153,17 +153,21 @@ INSERT INTO `proveedor` (`codproveedor`, `proveedor`, `contacto`, `telefono`, `d
 
 CREATE TABLE `rol` (
   `idrol` int(11) NOT NULL,
-  `rol` varchar(20) DEFAULT NULL
+  `nombrerol` varchar(20) DEFAULT NULL,
+  `fecha_alta` date DEFAULT NULL,
+  `fecha_edit` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `rol`
 --
 
-INSERT INTO `rol` (`idrol`, `rol`) VALUES
-(1, 'Administrador'),
-(2, 'Vendedor'),
-(3, 'Usuario');
+INSERT INTO `rol` (`idrol`, `nombrerol`, `fecha_alta`, `fecha_edit`) VALUES
+(1, 'Administrador', NULL, NULL),
+(2, 'Vendedor', NULL, NULL),
+(3, 'Usuario', NULL, NULL),
+(4, 'Visitante', NULL, NULL),
+(5, 'Supervisor', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -196,11 +200,17 @@ INSERT INTO `usuario` (`idusuario`, `nombre`, `correo`, `usuario`, `clave`, `rol
 (6, 'Gerardo Chávez Rodríguez', 'gercha@gmail.com', 'gercharod', '9dcc1417af6a8f4c33a87f38e714a0e5', 2, 1, '2020-09-19 02:49:36', NULL),
 (7, 'Juan José Ramirez', 'juf@hotmail.com', 'juanjosefa', '3292b64225849daae9a7da78b89422af', 3, 1, '2020-09-19 02:49:36', NULL),
 (9, 'Joaquin Ramirez Garay', 'joaq@gmail.com', 'joaka', '3292b64225849daae9a7da78b89422af', 3, 0, '2020-09-19 21:15:06', NULL),
-(10, 'Ronal Vera Davinson', 'ronaldino@gmail.com', 'ronaldiño', '9dcc1417af6a8f4c33a87f38e714a0e5', 3, 1, '2020-09-19 02:49:36', NULL),
+(10, 'Ronal Vera Davinson', 'ronaldino@gmail.com', 'ronaldiño', '9dcc1417af6a8f4c33a87f38e714a0e5', 5, 1, '2022-01-18 20:11:38', NULL),
 (11, 'Josue Chavez Rodriguez', 'josues@hotmail.com', 'joshu', '63d3901c4e9e7b97835c2b56fa7c8bb5', 2, 1, '2020-09-19 02:49:36', NULL),
 (12, 'Maria Reyes Ganoza', 'marirey@outlook.com', 'marirey', '3292b64225849daae9a7da78b89422af', 2, 1, '2020-09-19 02:49:36', NULL),
 (13, 'Juana de Arco Valdez', 'jsss@gmail.com', 'januela', '827ccb0eea8a706c4c34a16891f84e7b', 2, 1, '2020-09-19 02:49:36', NULL),
-(14, 'Luis Gonzales', 'luisgonza@gmail.com', 'luisgonza', '3292b64225849daae9a7da78b89422af', 2, 1, '2020-09-19 02:49:36', NULL);
+(14, 'Luis Gonzales', 'luisgonza@gmail.com', 'luisgonza', '3292b64225849daae9a7da78b89422af', 2, 1, '2020-09-19 02:49:36', NULL),
+(15, 'Jose Jose', 'josejose@gmail.com', 'Josejose', NULL, 3, 1, '2022-01-18 20:09:49', '2022-01-15 03:50:44'),
+(16, 'Luisa Alosilla', 'alosilaluisa@gmail.com', 'luisaloci', NULL, 1, 1, '2022-01-19 00:27:32', '2022-01-19 00:27:32'),
+(17, 'Nancy Cruz', 'nanycruz@gmail.com', 'nany2020', NULL, 2, 1, '2022-01-19 00:29:43', '2022-01-19 00:29:43'),
+(18, 'Juan Gabriel', 'juaga@hotmail.com', 'juangac', NULL, 4, 1, '2022-01-19 00:38:53', '2022-01-19 00:38:53'),
+(19, 'Camilo Sexto', 'camilosex@gmail.com', 'camilosexto', NULL, 5, 1, '2022-01-19 00:41:39', '2022-01-19 00:41:39'),
+(20, 'Miriam Hernandez', 'miriamher@gmail.com', 'miriambee', '3292b64225849daae9a7da78b89422af', 3, 1, '2022-01-19 00:43:22', '2022-01-19 00:43:22');
 
 --
 -- Índices para tablas volcadas
@@ -295,13 +305,13 @@ ALTER TABLE `detalle_temp`
 -- AUTO_INCREMENT de la tabla `entradas`
 --
 ALTER TABLE `entradas`
-  MODIFY `correlativo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `correlativo` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `factura`
 --
 ALTER TABLE `factura`
-  MODIFY `nofactura` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `nofactura` bigint(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
@@ -319,13 +329,13 @@ ALTER TABLE `proveedor`
 -- AUTO_INCREMENT de la tabla `rol`
 --
 ALTER TABLE `rol`
-  MODIFY `idrol` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idrol` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- Restricciones para tablas volcadas

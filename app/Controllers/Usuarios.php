@@ -12,7 +12,7 @@ use Config\Services\session;
 class Usuarios extends Controller {
 
     function __construct(){
-
+    
         /* Cargando biblioteca model y de sesión de usuario */
         $users = new UsuarioModel();
         $roles = new RolesModel();
@@ -44,6 +44,8 @@ class Usuarios extends Controller {
 
     public function nuevo()
     {
+       
+
         $roles = new RolesModel();
         $data= [
             'titulo'=>'Agregar Usuarios',           
@@ -59,6 +61,38 @@ class Usuarios extends Controller {
     public function insertar()
     {
       
+        $validation = service('validation');
+        $validation->setRules([
+            'nombre' => [
+                'label'=> 'Regla.Nombre',
+                'rules'=> 'required',
+                'errors'=> ['required'=> 'El nombre y apellido es un campo requerido'],
+            ],
+            'correo' => [
+                'label'=> 'El correo',
+                'rules'=> 'required|valid_email|is_unique[usuario.correo]',
+                'errors'=> ['required'=> 'El Correo es un campo requerido',
+                            'valid_email'=> 'El Correo ingresado no es válido',
+                            'is_unique'=> 'El Correo ingresado, ya se encuentra registrado'
+                            ],
+            ],
+            'usuario' => [
+                'label'=> 'Regla.Usuario',
+                'rules'=> 'required',
+                'errors'=> ['required'=> 'El usuario es un campo requerido'],
+            ],
+            'password' => [
+                'label'=> 'Regla.Clave',
+                'rules'=> 'required|min_length[06]',
+                'errors'=> ['required'=> 'El Password es un campo requerido y debe tener min seis digitos'],
+            ]
+        ]);
+
+       if (!$validation->withRequest($this->request)->run()) {
+           return redirect()->back()->withInput()->with('errors',$validation->getErrors());
+           # code...
+       }
+       
    
         $users = new UsuarioModel();
         $users->save([

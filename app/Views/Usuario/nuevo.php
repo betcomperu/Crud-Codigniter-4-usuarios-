@@ -36,28 +36,35 @@
         <div class="card-body">
         <div class="register-box-body">
    
-   <div Alert</div>
+        <!-- <div class="alert alert-danger" role="alert"> -->
+    <ul>
+ 
+</div>
    <form action="<?php echo base_url(); ?>/usuarios/insertar" method="post">
      <div class="form-group has-feedback">
-       <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre y Apellidos" required>
+       <input type="text" value="<?= old('nombre')?>" id="nombre" name="nombre" class="form-control" placeholder="Nombre y Apellidos">
        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+       <p class="text text-danger"><?= session('errors.nombre')?></p>
      </div>
      <div class="form-group has-feedback">
-       <input type="email" id="correo" name="correo" class="form-control" placeholder="Email" required>
+       <input type="email" value="<?= old('correo')?>" id="correo" name="correo" class="form-control" placeholder="Email">
        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+       <p class="text text-danger"><?= session('errors.correo')?></p>
      </div>
      <div class="form-group has-feedback">
-       <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuario" required>
+       <input type="text" value="<?= old('usuario')?>" id="usuario" name="usuario" class="form-control" placeholder="Usuario">
        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+       <p class="text text-danger"><?= session('errors.usuario')?></p>
      </div>
      <div class="form-group has-feedback">
-       <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+       <input type="password" value="<?= old('password')?>" id="password" name="password" class="form-control" placeholder="Password">
        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+       <p class="text text-danger"><?= session('errors.password')?></p>
      </div>
      <div class="form-group has-feedback">
        
           
-           <select name="rol" id="rol" class="form-control select2" style="width: 100%;">
+           <select name="rol" value="<?= old('rol')?>" id="rol" class="form-control select2" style="width: 100%;">
           
            <?php foreach($usuarios as $val): ?>
             <option value="<?php echo $val['idrol'] ;?>"><?php echo $val['nombrerol'] ;?></option>    
@@ -67,11 +74,10 @@
      </div>
      <div class="row">
        <div class="col-sm-4">
-       <button type="submit" class="btn btn-primary btn-block btn-flat">Registar</button>
+       <button type="submit" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Registar</button>
+       <a href="<?php echo base_url();?>/usuarios" class="btn btn-success"><i class="fa fa-plus-circle"></i> Regresar</a>
        </div>
-       <div class="col-sm-4">
-         <a href="<?php echo base_url();?>/usuarios" class="btn btn-success"><i class="fa fa-plus-circle"></i> Agregar usuario</a>
-       </div>
+       
        <!-- /.col -->
  
      </div>
@@ -83,9 +89,7 @@
  </div>
         </div>
         <!-- /.card-body -->
-        <div class="card-footer">
-          Footer
-        </div>
+        
         <!-- /.card-footer-->
       </div>
       <!-- /.card -->

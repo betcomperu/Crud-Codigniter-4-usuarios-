@@ -1,0 +1,79 @@
+CRITICAL - 2022-01-19 10:10:21 --> Undefined variable: errors
+#0 C:\laragon\www\europharmaci4\app\Views\Usuario\nuevo.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/nuevo', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(64): view('Usuario/nuevo', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->nuevo()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-19 10:26:24 --> syntax error, unexpected '$roles' (T_VARIABLE), expecting '('
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('usuarios/nuevo')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('usuarios/nuevo')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-19 10:26:43 --> Undefined variable: errors
+#0 C:\laragon\www\europharmaci4\app\Views\Usuario\nuevo.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/nuevo', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(66): view('Usuario/nuevo', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->nuevo()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-19 10:29:13 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('usuarios/nuevo')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('usuarios/nuevo')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-19 10:29:36 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::run()
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->nuevo()
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-19 10:33:29 --> Undefined variable: errors
+#0 C:\laragon\www\europharmaci4\app\Views\Usuario\nuevo.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/nuevo', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(58): view('Usuario/nuevo', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->nuevo()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-19 10:35:05 --> Undefined variable: errors
+#0 C:\laragon\www\europharmaci4\app\Views\Usuario\nuevo.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/nuevo', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(58): view('Usuario/nuevo', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->nuevo()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-19 11:04:01 --> Unknown column 'email' in 'where clause'
+CRITICAL - 2022-01-19 11:04:01 --> Unknown column 'email' in 'where clause'
+#0 C:\laragon\www\europharmaci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\laragon\www\europharmaci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\europharmaci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\europharmaci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\europharmaci4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\europharmaci4\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('pablo@hotmail.c...', 'email', Array, NULL)
+#6 C:\laragon\www\europharmaci4\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('correo', 'correo', 'pablo@hotmail.c...', Array, Array)
+#7 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(72): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->insertar()
+#9 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

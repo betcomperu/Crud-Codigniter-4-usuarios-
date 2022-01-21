@@ -53,6 +53,7 @@
                 <th>Correo</th>
                 <th>Usuario</th>
                 <th>Rol</th>
+                <th>Imagen</th>
                 <th>Opciones</th>
 
             </tr>  
@@ -90,6 +91,10 @@
 
             
             </td>
+            <td>
+                      <img src="" alt="img-responsive" width="150">                    
+
+            </td>
                 <td>
                 <a class="btn btn-primary" href="#" role="button">Editar</a>
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalborrar">Eliminar</button>
@@ -103,6 +108,7 @@
                                 <th>Correo</th>
                                 <th>Usuario</th>
                                 <th>Rol</th>
+                                <th>Imagen</th>
                                 <th>Opciones</th>
                             </tr>
                </tfoot>

@@ -100,6 +100,8 @@ class Usuarios extends Controller {
             'correo'=>$this->request->getPost('correo'),
             'usuario'=>$this->request->getPost('usuario'),
             'clave'=>md5($this->request->getPost('password')),
+            
+
             'rol'=>$this->request->getPost('rol')]);
         
             return redirect()->to(base_url().'/usuarios');

@@ -40,7 +40,7 @@
     <ul>
  
 </div>
-   <form action="<?php echo base_url(); ?>/usuarios/insertar" method="post">
+   <form action="<?php echo base_url(); ?>/usuarios/insertar" method="post" enctype="multipart/form-data">
      <div class="form-group has-feedback">
        <input type="text" value="<?= old('nombre')?>" id="nombre" name="nombre" class="form-control" placeholder="Nombre y Apellidos">
        <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -60,7 +60,9 @@
        <input type="password" value="<?= old('password')?>" id="password" name="password" class="form-control" placeholder="Password">
        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
        <p class="text text-danger"><?= session('errors.password')?></p>
+       
      </div>
+
      <div class="form-group has-feedback">
        
           
@@ -72,6 +74,14 @@
 
            </select>
      </div>
+                    
+     <div class="form-group">
+    <label for="exampleFormControlFile1">Subir archivo foto</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+       </div>
+
+    
      <div class="row">
        <div class="col-sm-4">
        <button type="submit" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Registar</button>

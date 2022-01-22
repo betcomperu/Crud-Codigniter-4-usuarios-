@@ -95,16 +95,68 @@ class Usuarios extends Controller {
        
    
         $users = new UsuarioModel();
+
+       $file = $this->request->getfile('foto');
+       if ($file->isValid() &&! $file->hasMoved()) {
+           $imageName = $file->getRandomName();
+           $file->move('uploads/',$imageName);
+       }
+
+       /* Graba lo que traen los POST */
         $users->save([
             'nombre'=>$this->request->getPost('nombre'),
             'correo'=>$this->request->getPost('correo'),
             'usuario'=>$this->request->getPost('usuario'),
             'clave'=>md5($this->request->getPost('password')),
-            
-
-            'rol'=>$this->request->getPost('rol')]);
+            'rol'=>$this->request->getPost('rol'),
+            'foto'=>$imageName
+             ]);
         
             return redirect()->to(base_url().'/usuarios');
+    }
+    public function edit($id = null){
+
+        $users = new UsuarioModel();
+        $roles = new RolesModel();
+        $data= [
+            'titulo'=>'Agregar Usuarios',           
+            'usuarios'=>$roles->select('*')->findAll()
+            ];
+        $data= [
+            'titulo'=>'Editar Usuario',           
+            'usuarios'=>$users->asObject()->select('*')->join('rol','rol.idrol=usuario.rol', 'left')->find($id),
+            'roles'=>$roles->select('*')->findAll()
+
+            ];
+            echo view('plantillas/header');
+            echo view('plantillas/top-menu');
+            echo view('plantillas/aside');
+            echo view('Usuario/editar', $data);
+            echo view('plantillas/footer');
+    
+    }
+    public function update($id = null){
+
+        $users = new UsuarioModel();
+
+        $file = $this->request->getfile('foto');
+        if ($file->isValid() &&! $file->hasMoved()) {
+            $imageName = $file->getRandomName();
+            $file->move('uploads/',$imageName);
+        }
+ 
+        $data = [
+
+            'nombre'=>$this->request->getPost('nombre'),
+             'correo'=>$this->request->getPost('correo'),
+             'usuario'=>$this->request->getPost('usuario'),
+             'clave'=>md5($this->request->getPost('password')),
+             'rol'=>$this->request->getPost('rol'),
+             'foto'=>$imageName
+        ];
+        $users->update($id, $data);
+        return redirect()->to(base_url().'/usuarios');
+
     }
 
 

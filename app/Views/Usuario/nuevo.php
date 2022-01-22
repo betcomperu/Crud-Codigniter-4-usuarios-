@@ -77,7 +77,7 @@
                     
      <div class="form-group">
     <label for="exampleFormControlFile1">Subir archivo foto</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="foto">
   </div>
        </div>
 

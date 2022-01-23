@@ -31,6 +31,8 @@
                         <i class="fas fa-times"></i></button>
                 </div>
             </div>
+
+
             <div class="card-body">
                 <div class="box-header with-border">
                     <a href="<?php echo base_url(); ?>/usuarios/nuevo" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Agregar usuario

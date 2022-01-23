@@ -1,0 +1,25 @@
+CRITICAL - 2022-01-22 16:48:18 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 112, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->insertar()
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-22 18:40:46 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(155): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 155, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('25')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-22 18:44:23 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\laragon\www\europharmaci4\app\Views\Usuario\nuevo.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 39, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/nuevo', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(58): view('Usuario/nuevo', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->nuevo()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

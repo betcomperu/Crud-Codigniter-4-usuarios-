@@ -35,6 +35,8 @@
         </div>
         <div class="card-body">
         <div class="register-box-body">
+
+        <div class="flash-data" data-flasdata="<?= $this->session->flashdata('fhash')?>"</div>
    
         <!-- <div class="alert alert-danger" role="alert"> -->
     <ul>

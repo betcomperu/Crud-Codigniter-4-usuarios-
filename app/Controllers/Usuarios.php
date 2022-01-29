@@ -128,6 +128,8 @@ class Usuarios extends Controller
             'foto' => $imageName
         ]);
 
+        session()->setFlashdata('registrado'," A registrado un nuevo usuario");
+
         return redirect()->to(base_url() . '/usuarios');
     }
 

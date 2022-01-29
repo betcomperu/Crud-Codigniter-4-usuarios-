@@ -103,7 +103,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="registro_usuario.php" class="nav-link">
+                <a href="<?php echo base_url(); ?>/usuarios/nuevo" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Registrar Usuario</p>
                 </a>

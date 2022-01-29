@@ -31,7 +31,13 @@
                         <i class="fas fa-times"></i></button>
                 </div>
             </div>
+            <!--Pintar mensaje de Flashdata-->
 
+            <?php if (session()->getFlashdata('registrado')) : ?>
+                <div class="alert alert-success" role="alert">
+                    <?= session()->getFlashdata('registrado'); ?>
+                </div>
+            <?php endif; ?>
 
             <div class="card-body">
                 <div class="box-header with-border">
@@ -95,9 +101,9 @@
 
                                     </td>
                                     <td>
-                                        <a class="btn btn-primary" href="<?= base_url('Usuarios/edit/'.$dato->idusuario)?>" role="button">Editar</a>
-                                        <a class="btn btn-danger" href="<?= base_url('Usuarios/eliminar/'.$dato->idusuario)?>" role="button">Eiminar</a>
-                                        
+                                        <a class="btn btn-primary" href="<?= base_url('Usuarios/edit/' . $dato->idusuario) ?>" role="button">Editar</a>
+                                        <a class="btn btn-danger" href="<?= base_url('Usuarios/eliminar/' . $dato->idusuario) ?>" role="button">Eiminar</a>
+
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

@@ -19,7 +19,7 @@ class UsuarioModel extends Model{
     protected $useTimestamps = true;
     
     /* default fields that will be inserted */
-    protected $allowedFields = ['nombre', 'correo', 'usuario','clave','rol', "foto", 'fecha_alta','fecha_edit'];
+    protected $allowedFields = ['nombre', 'correo', 'usuario','clave','rol', "foto",'condicion', 'fecha_alta','fecha_edit'];
 
     /* automatic date create in database */
     protected $createdField = "fecha_alta";

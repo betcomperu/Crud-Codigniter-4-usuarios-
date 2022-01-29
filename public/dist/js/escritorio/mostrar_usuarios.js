@@ -1,8 +1,6 @@
 
-
+/*
 //Swall Alert 2
-
-
 
 const flashData = $('.flash-data').data('flashData');
 if (flashData) {
@@ -12,3 +10,4 @@ if (flashData) {
         icon: success
     })
 }
+*/

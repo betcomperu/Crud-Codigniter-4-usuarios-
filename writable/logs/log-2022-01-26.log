@@ -1,0 +1,25 @@
+CRITICAL - 2022-01-26 18:35:05 --> Undefined property: App\Controllers\Usuarios::$users
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(195): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 195, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->eliminar('3')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-26 18:36:24 --> There is no data to update.
+#0 C:\laragon\www\europharmaci4\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\europharmaci4\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(195): CodeIgniter\Model->update('3', Array)
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->eliminar('3')
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-26 18:48:52 --> There is no data to update.
+#0 C:\laragon\www\europharmaci4\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\europharmaci4\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(199): CodeIgniter\Model->update('3', Array)
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->eliminar('3')
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

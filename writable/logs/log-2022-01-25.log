@@ -1,0 +1,36 @@
+CRITICAL - 2022-01-25 22:03:38 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('usuarios')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('usuarios')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-25 22:05:46 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(174): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 174, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('26')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-25 22:10:20 --> The original file is not a valid file.
+#0 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(111): CodeIgniter\HTTP\Files\UploadedFile->move('uploads/', '1643170220_c603...')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->insertar()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-25 22:51:54 --> syntax error, unexpected 'if' (T_IF)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('usuarios/nuevo')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('usuarios/nuevo')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-25 23:01:24 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(179): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 179, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('27')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

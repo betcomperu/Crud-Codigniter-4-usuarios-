@@ -2,7 +2,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\TestModel;
+use App\Models\RolesModel;
 use App\Models\UsuarioModel;
 
 class Test extends Controller{
@@ -11,7 +11,7 @@ class Test extends Controller{
 
         /* Cargando variable en el constructor y le pongo de nombre model*/
        
-        $this->rol=new TestModel();
+        $this->rol=new RolesModel();
         $this->usuario=new UsuarioModel();
         $pager = \Config\Services::pager();
         
@@ -35,7 +35,7 @@ class Test extends Controller{
     $data = [
         'titulo'=> "Usuarios",
         'rol'=>$query,
-        'usuarios'=> $this->usuario->$query->getResultArray()
+        'usuarios'=> $this->usuario->findAll()
         
         
     ];

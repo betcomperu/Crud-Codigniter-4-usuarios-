@@ -96,7 +96,8 @@
                                     </td>
                                     <td>
                                         <a class="btn btn-primary" href="<?= base_url('Usuarios/edit/'.$dato->idusuario)?>" role="button">Editar</a>
-                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalborrar">Eliminar</button>
+                                        <a class="btn btn-danger" href="<?= base_url('Usuarios/eliminar/'.$dato->idusuario)?>" role="button">Eiminar</a>
+                                        
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

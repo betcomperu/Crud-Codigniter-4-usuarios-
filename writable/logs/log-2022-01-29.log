@@ -1,0 +1,10 @@
+CRITICAL - 2022-01-29 11:45:47 --> Call to undefined method CodeIgniter\View\View::session()
+#0 C:\laragon\www\europharmaci4\system\View\View.php(210): include()
+#1 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/listar', Array, true)
+#3 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(45): view('Usuario/listar', Array)
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

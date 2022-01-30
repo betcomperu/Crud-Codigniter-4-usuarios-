@@ -86,7 +86,7 @@
     
      <div class="row">
        <div class="col-sm-4">
-       <button type="submit" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Registar</button>
+       <button type="submit" class="btn btn-primary registrar"><i class="fa fa-plus-circle"></i> Registar</button>
        <a href="<?php echo base_url();?>/usuarios" class="btn btn-success"><i class="fa fa-plus-circle"></i> Regresar</a>
        </div>
        

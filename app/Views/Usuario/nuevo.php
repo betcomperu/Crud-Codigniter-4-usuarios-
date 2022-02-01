@@ -78,6 +78,10 @@
      </div>
                     
      <div class="form-group">
+     <div class="col-sm-2">
+         <img src="/uploads/default.png" class="img-thumbnail img-previe" alt="">
+
+       </div>
     <label for="exampleFormControlFile1">Subir archivo foto</label>
     <input type="file" class="form-control-file" id="exampleFormControlFile1" name="foto">
   </div>
@@ -85,7 +89,8 @@
 
     
      <div class="row">
-       <div class="col-sm-4">
+      
+       <div class="col-sm-8">
        <button type="submit" class="btn btn-primary registrar"><i class="fa fa-plus-circle"></i> Registar</button>
        <a href="<?php echo base_url();?>/usuarios" class="btn btn-success"><i class="fa fa-plus-circle"></i> Regresar</a>
        </div>

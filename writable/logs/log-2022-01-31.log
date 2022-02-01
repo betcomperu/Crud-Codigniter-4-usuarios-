@@ -1,0 +1,173 @@
+CRITICAL - 2022-01-31 11:49:01 --> The original file is not a valid file.
+#0 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(176): CodeIgniter\HTTP\Files\UploadedFile->move('uploads/', '1643651341_4a1f...')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-31 11:58:27 --> The original file is not a valid file.
+#0 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(184): CodeIgniter\HTTP\Files\UploadedFile->move('uploads/', '1643651907_4055...')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-31 11:59:51 --> Undefined variable: img
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 172, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-31 12:00:24 --> The original file is not a valid file.
+#0 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(184): CodeIgniter\HTTP\Files\UploadedFile->move('uploads/', '1643652024_7bf8...')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-31 12:02:52 --> The original file is not a valid file.
+#0 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(193): CodeIgniter\HTTP\Files\UploadedFile->move('uploads/', '1643652172_21ec...')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-31 12:05:38 --> Call to a member function hasMoved() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 12:15:31 --> syntax error, unexpected ')'
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('usuarios')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('usuarios')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-31 12:15:55 --> Call to a member function hasMoved() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 12:27:20 --> Call to a member function isValid() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('15')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 12:28:55 --> Call to a member function getName() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('15')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 12:28:56 --> Call to a member function getName() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('15')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 12:30:03 --> Call to a member function getName() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('15')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 12:31:04 --> Call to a member function getName() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('15')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 12:31:09 --> Call to a member function getName() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('15')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 16:33:49 --> Call to a member function getName() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('33')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 16:34:12 --> Call to a member function getName() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('33')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 16:35:15 --> Undefined variable: file
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 190, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('33')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-31 16:35:50 --> Call to a member function hasMoved() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('33')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 16:52:00 --> Call to undefined method CodeIgniter\HTTP\Files\UploadedFile::invalid()
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 16:52:51 --> finfo_file(C:\Users\albet\AppData\Local\Temp\php5604.tmp): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\U...', 'C:\\laragon\\www\\...', 109, Array)
+#1 C:\laragon\www\europharmaci4\system\Files\File.php(109): finfo_file(Resource id #162, 'C:\\Users\\albet\\...')
+#2 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+#3 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 C:\laragon\www\europharmaci4\system\Files\File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(199): CodeIgniter\Files\File->getRandomName()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-31 16:53:36 --> The original file is not a valid file.
+#0 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(200): CodeIgniter\HTTP\Files\UploadedFile->move('uploads/', '1643669616_c95d...')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-31 16:54:17 --> The original file is not a valid file.
+#0 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(199): CodeIgniter\HTTP\Files\UploadedFile->move('uploads/', '1643669657_0c9f...')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-31 16:54:47 --> The original file is not a valid file.
+#0 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(199): CodeIgniter\HTTP\Files\UploadedFile->move('uploads/', '1643669687_8d56...')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-31 16:57:19 --> finfo_file(C:\Users\albet\AppData\Local\Temp\php6D43.tmp): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\U...', 'C:\\laragon\\www\\...', 109, Array)
+#1 C:\laragon\www\europharmaci4\system\Files\File.php(109): finfo_file(Resource id #162, 'C:\\Users\\albet\\...')
+#2 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+#3 C:\laragon\www\europharmaci4\system\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 C:\laragon\www\europharmaci4\system\Files\File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(198): CodeIgniter\Files\File->getRandomName()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('15')
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

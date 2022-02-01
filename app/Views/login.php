@@ -1,77 +1,91 @@
-<!doctype html>
-<html class="no-js " lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Log in (v2)</title>
 
-<title>:: SISTEMA BETCOM :: Ingreso al Sistema</title>
-<!-- Favicon-->
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<!-- Custom Css -->
-<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/style.min.css">    
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>/public/plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>/public/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>/public/dist/css/adminlte.min.css">
 </head>
-
-<body class="theme-blush">
-
-<div class="authentication">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-sm-12">
-                <form class="card auth_form" action='/usuario/login' method='post'>
-                    <div class="header">
-                        <img class="logo" src="<?php echo base_url();?>/assets/images/logo.svg" alt="">
-                        <h5>Iniciar sesión</h5>
-                          <?php if (session()->get('success')): ?>
-                        <div class="alert alert-success" role="alert">
-                            <?= session()->get('success') ?>
-                        </div>  <?php endif; ?>
-                    </div>
-                    <div class="body">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Email" name="correo">
-                            <div class="input-group-append">
-                                <span class="input-group-text"><i class="zmdi zmdi-account-circle"></i></span>
-                            </div>
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="password" class="form-control" placeholder="Password" name="correo">
-                            <div class="input-group-append">                                
-                                <span class="input-group-text"><a href="forgot-password.html" class="forgot" title="Forgot Password"><i class="zmdi zmdi-lock"></i></a></span>
-                            </div>                            
-                        </div>
-                        <div class="checkbox">
-                            <input id="remember_me" type="checkbox">
-                            <label for="remember_me">Recuerdame</label>
-                        </div>
-                        <a class="btn btn-primary btn-block waves-effect waves-light">INGRESAR</a>                        
-                        <div class="signin_with mt-3">
-                            <p class="mb-0">Ingrese usando</p>
-                            <button class="btn btn-primary btn-icon btn-icon-mini btn-round facebook"><i class="zmdi zmdi-facebook"></i></button>
-                            <button class="btn btn-primary btn-icon btn-icon-mini btn-round twitter"><i class="zmdi zmdi-twitter"></i></button>
-                            <button class="btn btn-primary btn-icon btn-icon-mini btn-round google"><i class="zmdi zmdi-google-plus"></i></button>
-                        </div>
-                    </div>
-                </form>
-                <div class="copyright text-center">
-                    &copy;
-                    <script>document.write(new Date().getFullYear())</script>,
-                    <span>Designed by <a href="https://thememakker.com/" target="_blank">ThemeMakker</a></span>
-                </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-                <div class="card">
-                    <img src="<?php echo base_url();?>/assets/images/signin.svg" alt="Sign In"/>
-                </div>
-            </div>
-        </div>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
     </div>
-</div>
+    <div class="card-body">
+      <p class="login-box-msg">Sign in to start your session</p>
 
-<!-- Jquery Core Js -->
-<script src="<?php echo base_url();?>/assets/bundles/libscripts.bundle.js"></script>
-<script src="<?php echo base_url();?>/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+      <form action="../../index3.html" method="post">
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Remember Me
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+
+      <div class="social-auth-links text-center mt-2 mb-3">
+        <a href="#" class="btn btn-block btn-primary">
+          <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+        </a>
+        <a href="#" class="btn btn-block btn-danger">
+          <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+        </a>
+      </div>
+      <!-- /.social-auth-links -->
+
+      <p class="mb-1">
+        <a href="forgot-password.html">I forgot my password</a>
+      </p>
+      <p class="mb-0">
+        <a href="register.html" class="text-center">Register a new membership</a>
+      </p>
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
 </body>
 </html>

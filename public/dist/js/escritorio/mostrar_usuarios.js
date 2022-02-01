@@ -1,5 +1,3 @@
-
-
 //Swall Alert 2
 
   const swal = $('.swal').data('swal');
@@ -14,6 +12,18 @@
       })
   }
 
+  const swal = $('.swal2').data('editado');
+  // console.log(flashData);
+  if (swal) {
+     Swal.fire({
+         position: 'top-end',
+         icon: 'success',
+         title: 'El usuario ha sido Actualizado',
+         showConfirmButton: false,
+         timer: 1500
+       })
+   }
+ 
 
 $(document).on('click','.eliminar', function(e){
 

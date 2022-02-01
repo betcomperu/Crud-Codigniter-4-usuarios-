@@ -7,6 +7,7 @@ use App\Models\UsuarioModel;
 use App\Models\RolesModel;
 use App\Controllers\BaseController;
 use Config\Services\session;
+use CodeIgniter\Files\File;
 
 /* Users Controller */
 
@@ -20,6 +21,7 @@ class Usuarios extends Controller
         $users = new UsuarioModel();
         $roles = new RolesModel();
         $this->session = \Config\Services::session();
+        
     }
 
     /*
@@ -96,7 +98,15 @@ class Usuarios extends Controller
                 'label' => 'Regla.Clave',
                 'rules' => 'required|min_length[06]',
                 'errors' => ['required' => 'El Password es un campo requerido y debe tener min seis digitos'],
-            ]
+            ],
+
+            'foto' => [
+                'label' => 'Image File',
+                'rules' => 'uploaded[userfile]'
+                    . '|is_image[userfile]'
+                    . '|mime_in[userfile,image/jpg,image/jpeg,image/gif,image/png,image/webp]'
+                    
+            ],
         ]);
 
         if (!$validation->withRequest($this->request)->run()) {
@@ -109,7 +119,7 @@ class Usuarios extends Controller
 
         //  $foto = $this->request->getPOST('foto');
 
-        $file = $this->request->getfile('foto');
+        $file = $this->request->getFile('foto');
 
         if ($file->getError() == 4) {
             $imageName = 'default.png';
@@ -147,6 +157,12 @@ class Usuarios extends Controller
         $users = new UsuarioModel();
         $roles = new RolesModel();
 
+        $file = $this->request->getPost('foto');
+       
+        
+        
+
+
         $data = [
             'titulo' => 'Editar Usuario',
             'usuarios' => $users->asObject()->select('*')->join('rol', 'rol.idrol=usuario.rol', 'left')->find($id),
@@ -165,18 +181,25 @@ class Usuarios extends Controller
     public function update($id = null)
     {
 
-        $users = new UsuarioModel();
-
-        $file = $this->request->getfile('foto');
-
-        if ($file->getError() == 4) {
-            $imageName = 'default.png';
-        } else {
-
+        $users = new UsuarioModel(); // Instancio el Modelo Usuario
+        $foto_item = $users->find($id); // Llamo al registro que coincide con el id
+       // echo $foto_item['foto']; // Imprimimos para ver el campo "foto"
+        $old_foto= $foto_item['foto'];
+        $file = $this->request->getFile('foto');
+        if ($file->isValid() && !$file->hasMoved())
+        {
+            
+            if(file_exists("uploads/".$old_foto))
+            {
+              unlink("uploads/".$old_foto);
+            }
             $imageName = $file->getRandomName();
             $file->move('uploads/', $imageName);
-        }
+        }else{
+            $imageName = $old_foto;
 
+        }
+        
         $data = [
 
             'nombre' => $this->request->getPost('nombre'),
@@ -187,8 +210,18 @@ class Usuarios extends Controller
             'foto' => $imageName
         ];
         $users->update($id, $data);
+        
+        session()->setFlashdata('editado'," El usuario ha sido Actualizado");
         return redirect()->to(base_url() . '/usuarios');
-    }
+
+
+
+
+        }
+     
+   /*
+#### EJECUTA LA BAJA DEL USUARIO NO LA ELIMINACION FISICA#### 
+*/   
 
     public function eliminar($id){
         

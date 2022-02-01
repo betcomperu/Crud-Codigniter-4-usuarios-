@@ -17,7 +17,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('Login');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -29,8 +29,8 @@ $routes->setAutoRoute(true);
  * --------------------------------------------------------------------
  */
 
-// We get a performance increase by specifying the default
-// route since we don't have to scan directories.
+// Obtenemos un aumento de rendimiento al especificar el valor predeterminado
+// ruta ya que no tenemos que escanear directorios.
 $routes->get('/', 'Home::index');
 
 /*
@@ -49,3 +49,4 @@ $routes->get('/', 'Home::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+$routes->get('Login', 'Login::index');

@@ -21,6 +21,8 @@
     <!-- Main content -->
     <section class="content">
 
+    <div class="swal2" data-swal="<?= session()->get('editado')?>"></div>
+
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
@@ -88,7 +90,7 @@
     
      <div class="row">
        <div class="col-sm-4">
-       <button type="submit" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Actualizar</button>
+       <button type="submit" class="btn btn-primary editar"><i class="fa fa-plus-circle"></i> Actualizar</button>
        <a href="<?php echo base_url();?>/usuarios" class="btn btn-success"><i class="fa fa-plus-circle"></i> Regresar</a>
        </div>
        

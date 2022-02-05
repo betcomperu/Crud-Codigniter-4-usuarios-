@@ -32,7 +32,7 @@ $routes->setAutoRoute(true);
 // Obtenemos un aumento de rendimiento al especificar el valor predeterminado
 // ruta ya que no tenemos que escanear directorios.
 $routes->get('/', 'Home::index');
-
+//$routes->add('usuarios/nuevo', 'Usuarios::nuevo');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
@@ -49,4 +49,3 @@ $routes->get('/', 'Home::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
-$routes->get('Login', 'Login::index');

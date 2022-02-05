@@ -21,6 +21,7 @@
     <!-- Main content -->
     <section class="content">
 
+    <div class="swal" data-swal="<?= session()->get('registrado')?>"></div>
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
@@ -36,9 +37,7 @@
         <div class="card-body">
         <div class="register-box-body">
 
-     
-   
-        <!-- <div class="alert alert-danger" role="alert"> -->
+             <!-- <div class="alert alert-danger" role="alert"> -->
     <ul>
  
 </div>

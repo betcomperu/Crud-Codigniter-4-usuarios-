@@ -2,8 +2,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\RolesModel;
-use App\Models\UsuarioModel;
+
 
 class Test extends Controller{
 
@@ -11,8 +10,7 @@ class Test extends Controller{
 
         /* Cargando variable en el constructor y le pongo de nombre model*/
        
-        $this->rol=new RolesModel();
-        $this->usuario=new UsuarioModel();
+   
         $pager = \Config\Services::pager();
         
        
@@ -21,28 +19,25 @@ class Test extends Controller{
 
     public function index(){
 
-    /* Uso la instancia para hacer mi consulta aplicando asObject para convertilo en objeto
-    El resultado será un objeto */
-    $datos = $this->usuario->asObject()->findAll();
-    $db= \Config\Database::connect();
-    $builder = $db->table('usuario u');
-    $builder->select('u.nombre, u.correo, u.usuario, u.rol');
-    $builder->join('rol r', 'r.idrol = u.rol');
-    $query = $builder->get();
 
-    // Creo un Array asociativo aprovechando colocarle "titulo".
-    
-    $data = [
-        'titulo'=> "Usuarios",
-        'rol'=>$query,
-        'usuarios'=> $this->usuario->findAll()
-        
-        
-    ];
+    $data = array(
+        'titulo'=> "Datos del Usuario",
+        'nombre'=> 'Alberto',
+        'apellidos'=> "Chávez Rodriguez",
+        'celular'=> '980900066',
+        'email'=> 'albetho@hotmail.com'
+    );
+
+    // var_dump($data);
+    // exit;
 
     // Lo pintamos en la vista "test" pasandole el array data
 
-    echo view('test', $data);
+    echo view('plantillas/header');
+        echo view('plantillas/top-menu');
+        
+        echo view('test', $data);
+        echo view('plantillas/footer');
 
     }
 

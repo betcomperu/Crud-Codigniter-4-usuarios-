@@ -7,15 +7,15 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="<?php echo base_url("public");?>/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>/plugins/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url();?>/public/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>/dist/css/AdminLTE.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="<?php echo base_url("public");?>/plugins/iCheck-bootstrap/icheck-bootstrap.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>/plugins/iCheck-bootstrap/icheck-bootstrap.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,16 +32,22 @@
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Iniciar Sesión</p>
+
+   
+</div>
+
   
 
-    <form action="" method="post">
+    <form action="<?php echo base_url();?>/login/entrar" method="post">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        <p class="text text-danger"><?= session('errors.usuario')?></p>
       </div>
       <div class="form-group has-feedback">
         <input type="password" class="form-control" id="password" name="password" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        <p class="text text-danger"><?= session('errors.clave')?></p>
       </div>
       <div class="row">
      
@@ -68,11 +74,11 @@
 <!-- /.login-box -->
 
 <!-- jQuery 2.2.3 -->
-<script src="<?php echo base_url("public");?>/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="<?php echo base_url();?>/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="<?php echo base_url("public");?>/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url();?>/plugins/bootstrap/js/bootstrap.min.js"></script>
 <!-- iCheck -->
-<script src="<?php echo base_url("public");?>/plugins/iCheck/icheck.min.js"></script>
+<script src="<?php echo base_url();?>/plugins/iCheck/icheck.min.js"></script>
 <script>
   $(function () {
     $('input').iCheck({

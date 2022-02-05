@@ -1,0 +1,296 @@
+CRITICAL - 2022-02-04 10:00:07 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(210): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 210, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('33')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 10:54:14 --> syntax error, unexpected 'default' (T_DEFAULT)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Usuarios/edit/3...')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('Usuarios/edit/3...')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 10:58:51 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(213): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 213, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('33')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 11:03:28 --> Call to a member function isValid() on string
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('33')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-04 11:04:55 --> Call to a member function isValid() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('33')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-04 11:05:39 --> Call to a member function isValid() on null
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('33')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-04 11:14:23 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('usuarios/update...')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('usuarios/update...')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 12:49:53 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 12:50:24 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 12:50:47 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 12:52:55 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 12:55:19 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 12:57:33 --> syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/login', Array, true)
+#2 C:\laragon\www\europharmaci4\app\Controllers\Login.php(29): view('Usuario/login')
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-04 12:58:42 --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP)
+#0 C:\laragon\www\europharmaci4\app\Views\Usuario\login.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/login', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Login.php(29): view('Usuario/login')
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-04 13:03:05 --> syntax error, unexpected ')'
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 13:07:41 --> syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting ';' or ','
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 14:00:43 --> syntax error, unexpected ';', expecting ')'
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 14:13:43 --> Undefined variable: errors
+#0 C:\laragon\www\europharmaci4\app\Views\Usuario\login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 38, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/login', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Login.php(33): view('Usuario/login', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-04 14:15:56 --> Undefined variable: validation
+#0 C:\laragon\www\europharmaci4\app\Views\Usuario\login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 38, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/login', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Login.php(33): view('Usuario/login', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-04 14:16:02 --> Undefined variable: validation
+#0 C:\laragon\www\europharmaci4\app\Views\Usuario\login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 38, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/login', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Login.php(33): view('Usuario/login', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-04 14:17:49 --> Undefined variable: errors
+#0 C:\laragon\www\europharmaci4\app\Views\Usuario\login.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 39, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/login', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Login.php(33): view('Usuario/login', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-04 14:19:26 --> Undefined variable: errors
+#0 C:\laragon\www\europharmaci4\app\Views\Usuario\login.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 39, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/login', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Login.php(33): view('Usuario/login', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-04 14:23:30 --> syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 18:43:50 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 201, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('47')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 18:44:20 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 201, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('47')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 18:44:28 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 201, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('47')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 18:48:37 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(203): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 203, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('47')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 18:49:21 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(203): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 203, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('47')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 18:49:38 --> Undefined variable: imageName
+#0 C:\laragon\www\europharmaci4\app\Controllers\Usuarios.php(203): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 203, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('47')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 19:09:07 --> Call to undefined function App\Controllers\echo_view()
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-04 19:09:10 --> Call to undefined function App\Controllers\echo_view()
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-04 19:17:51 --> Undefined variable: usuario
+#0 C:\laragon\www\europharmaci4\app\Controllers\Login.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 36, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 19:20:07 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 19:20:11 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 19:24:11 --> Array to string conversion
+#0 C:\laragon\www\europharmaci4\app\Controllers\Login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\laragon\\www\\...', 38, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 19:24:25 --> Array to string conversion
+#0 C:\laragon\www\europharmaci4\app\Controllers\Login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\laragon\\www\\...', 38, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 19:40:55 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 19:41:03 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 19:52:45 --> Invalid file: plantillas/menu-derecho.php
+#0 C:\laragon\www\europharmaci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('plantillas/menu...')
+#1 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('plantillas/menu...', Array, true)
+#2 C:\laragon\www\europharmaci4\app\Controllers\Escritorio.php(10): view('plantillas/menu...')
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Escritorio->index()
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escritorio))
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

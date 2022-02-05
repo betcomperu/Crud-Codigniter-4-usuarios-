@@ -47,7 +47,8 @@
 
             <div class="card-body">
                 <div class="box-header with-border">
-                    <a href="<?php echo base_url(); ?>/usuarios/nuevo" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Agregar usuario
+                    <a href="<?php echo base_url(); ?>/usuarios/nuevo" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Agregar usuario </a>
+                    <a href="<?php echo base_url(); ?>/usuarios/eliminados" class="btn btn-warning"><i class="fas fa-list-ol"></i>  Eliminados
                     </a>
                     <div class="box-tools pull-right">
                         <br>

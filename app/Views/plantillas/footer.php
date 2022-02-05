@@ -41,8 +41,8 @@
 
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
 <!-- my Sweet Alert 2 -->
-<script src="<?php echo base_url(); ?>/libs/sweetalert2/dist/sweetalert2.all.js"></script>
-<script src="<?php echo base_url(); ?>/dist/js/escritorio/mostrar_usuarios.js"></script>
+<script src="/libs/sweetalert2/dist/sweetalert2.all.js"></script>
+<script src="/dist/js/escritorio/mostrar_usuarios.js"></script>
 
 <script>
 var table = $('#tabla1').DataTable({

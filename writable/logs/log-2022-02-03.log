@@ -1,0 +1,149 @@
+CRITICAL - 2022-02-03 11:19:53 --> syntax error, unexpected '{', expecting '('
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('usuarios')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('usuarios')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-03 19:29:39 --> Class 'App\Controllers\RolesModel' not found
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(800): App\Controllers\Test->__construct()
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-03 19:29:40 --> Class 'App\Controllers\RolesModel' not found
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(800): App\Controllers\Test->__construct()
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-03 19:30:06 --> Undefined variable: titulo
+#0 C:\laragon\www\europharmaci4\app\Views\test.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 11, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Test.php(32): view('test', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 19:31:01 --> Undefined variable: titulo
+#0 C:\laragon\www\europharmaci4\app\Views\test.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 11, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Test.php(33): view('test', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 19:31:40 --> Undefined variable: data
+#0 C:\laragon\www\europharmaci4\app\Views\test.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 11, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Test.php(33): view('test', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 19:32:00 --> Illegal string offset 'nombre'
+#0 C:\laragon\www\europharmaci4\app\Views\test.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\laragon\\www\\...', 28, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Test.php(33): view('test', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 19:33:13 --> Illegal string offset 'nombre'
+#0 C:\laragon\www\europharmaci4\app\Views\test.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\laragon\\www\\...', 28, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Test.php(33): view('test', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 19:36:00 --> Undefined variable: data
+#0 C:\laragon\www\europharmaci4\app\Views\test.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 26, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Test.php(33): view('test', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 19:38:34 --> Undefined variable: data
+#0 C:\laragon\www\europharmaci4\app\Views\test.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 26, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Test.php(33): view('test', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 19:39:34 --> Undefined variable: data
+#0 C:\laragon\www\europharmaci4\app\Views\test.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 26, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Test.php(33): view('test', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 19:42:22 --> Undefined variable: data
+#0 C:\laragon\www\europharmaci4\app\Views\test.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 26, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Test.php(36): view('test', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 19:42:46 --> Undefined variable: data
+#0 C:\laragon\www\europharmaci4\app\Views\test.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 26, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Test.php(36): view('test', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 19:43:12 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+#0 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#2 C:\laragon\www\europharmaci4\app\Controllers\Test.php(36): view('test', Array)
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-03 19:43:22 --> Undefined variable: r
+#0 C:\laragon\www\europharmaci4\app\Views\test.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 28, Array)
+#1 C:\laragon\www\europharmaci4\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('test', Array, true)
+#4 C:\laragon\www\europharmaci4\app\Controllers\Test.php(36): view('test', Array)
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Test->index()
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -60,7 +60,7 @@
        <p class="text text-danger"><?= session('errors.usuario')?></p>
      </div>
      <div class="form-group has-feedback">
-       <input type="password" value="<?= old('password')?>" id="password" name="password" class="form-control" placeholder="Password" disabled>
+       <input type="password" value="" id="password" name="password" class="form-control" placeholder="Password">
        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
        <p class="text text-danger"><?= session('errors.password')?></p>
        

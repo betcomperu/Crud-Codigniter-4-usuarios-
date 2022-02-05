@@ -30,6 +30,24 @@ class UsuarioModel extends Model{
     protected $skypValidation = false;
 
     
-
+    protected function antesInsertar(array $data){
+        $data = $this->passwordHash($data);
+        $data['data']['created_at'] = date('Y-m-d H:i:s');
+    
+        return $data;
+      }
+    
+      protected function antesActualizar(array $data){
+        $data = $this->passwordHash($data);
+        $data['data']['updated_at'] = date('Y-m-d H:i:s');
+        return $data;
+      }
+    
+      protected function claveHash(array $data){
+        if(isset($data['data']['password']))
+          $data['data']['password'] = password_hash($data['data']['password'], PASSWORD_DEFAULT);
+    
+        return $data;
+      }
 
 }

@@ -1,0 +1,122 @@
+CRITICAL - 2022-02-14 19:56:51 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, object given, called in C:\laragon\www\europharmaci4\system\Controller.php on line 160
+#0 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(58): CodeIgniter\Controller->validate(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 20:24:24 --> Call to a member function withRequest() on bool
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 20:26:18 --> Call to a member function withRequest() on bool
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 20:27:40 --> Undefined property: App\Controllers\Login::$validation
+#0 C:\laragon\www\europharmaci4\app\Controllers\Login.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 20:28:33 --> Undefined property: App\Controllers\Login::$validation
+#0 C:\laragon\www\europharmaci4\app\Controllers\Login.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 21:27:34 --> Call to undefined function display_error()
+#0 C:\laragon\www\europharmaci4\system\View\View.php(210): include()
+#1 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/login', Array, true)
+#3 C:\laragon\www\europharmaci4\app\Controllers\Login.php(55): view('Usuario/login', Array)
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 21:36:15 --> validateUser is not a valid rule.
+#0 C:\laragon\www\europharmaci4\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\laragon\www\europharmaci4\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('password', 'password', '120901', Array, Array)
+#2 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\laragon\www\europharmaci4\app\Controllers\Login.php(42): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 21:36:24 --> validateUser is not a valid rule.
+#0 C:\laragon\www\europharmaci4\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\laragon\www\europharmaci4\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('password', 'password', '120901', Array, Array)
+#2 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\laragon\www\europharmaci4\app\Controllers\Login.php(42): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 21:36:49 --> Call to undefined method App\Controllers\Login::setUserSession()
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 21:40:35 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\europharmaci4\app\Controllers\Login.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(47): App\Controllers\Login->setUserSession(NULL)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 21:45:46 --> syntax error, unexpected ')'
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 21:47:09 --> Undefined variable: model
+#0 C:\laragon\www\europharmaci4\app\Controllers\Login.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 33, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 21:48:15 --> Undefined variable: user
+#0 C:\laragon\www\europharmaci4\app\Controllers\Login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 31, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 21:49:19 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\europharmaci4\app\Controllers\Login.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 65, Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(52): App\Controllers\Login->setUserSession(NULL)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 21:50:00 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\europharmaci4\app\Controllers\Login.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 66, Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(52): App\Controllers\Login->setUserSession(NULL)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 21:51:03 --> Undefined variable: session
+#0 C:\laragon\www\europharmaci4\app\Controllers\Login.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 53, Array)
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

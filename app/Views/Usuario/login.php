@@ -35,32 +35,42 @@
 
    
 </div>
+<?php echo form_open('login/entrar');?>
+<?=csrf_field();?>
 
-  
 
-    <form action="<?php echo base_url();?>/login/entrar" method="post">
+
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario">
+<?php $isInvalidUsuario = (session()->getFlashdata('errUsuario'))? 'is-invalid':''; ?>
+      
+        <input type="text" class="form-control <?= $isInvalidUsuario; ?>" id="usuario" name="usuario" placeholder="Ingrese su Usuario" value="<?= old('usuario') ?>">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-        <p class="text text-danger"><?= session('errors.usuario')?></p>
+        <p class="text text-danger"><?= session()->getFlashdata('errUsuario')?></p>
+       
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+      <?php $isInvalidPassword = (session()->getFlashdata('errPassword'))? 'is-invalid':''; ?>
+        <input type="password" class="form-control <?= $isInvalidPassword ?>"" id="password" name="password" placeholder="Ingrese su Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-        <p class="text text-danger"><?= session('errors.clave')?></p>
+        <p class="text text-danger"><?= session()->getFlashdata('errPassword')?></p>
+      
       </div>
       <div class="row">
      
         <div class="col-sm-12">
-        <p class="text-red">
-            <?php echo isset($alert)?$alert:''; ?>
-        </p>
+        <?php if (isset($validation)): ?>
+            <div class="col-12">
+              <div class="alert alert-danger" role="alert">
+                <?= $validation->listErrors() ?>
+              </div>
+            </div>
+          <?php endif; ?>
           <button type="submit" class="btn btn-primary btn-block btn-flat" >INGRESAR</button>
         </div>
        
         <!-- /.col -->
       </div>
-    </form>
+    <?=form_close();?>
 
   
     <!-- /.social-auth-links -->

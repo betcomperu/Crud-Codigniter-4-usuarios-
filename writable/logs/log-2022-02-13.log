@@ -1,0 +1,8 @@
+CRITICAL - 2022-02-13 10:30:35 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, object given, called in C:\laragon\www\europharmaci4\system\Controller.php on line 160
+#0 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(56): CodeIgniter\Controller->validate(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

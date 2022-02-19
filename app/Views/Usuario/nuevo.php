@@ -42,6 +42,7 @@
  
 </div>
    <form action="<?php echo base_url(); ?>/usuarios/insertar" method="post" enctype="multipart/form-data">
+   <?= csrf_field();?>
      <div class="form-group has-feedback">
        <input type="text" value="<?= old('nombre')?>" id="nombre" name="nombre" class="form-control" placeholder="Nombre y Apellidos">
        <span class="glyphicon glyphicon-user form-control-feedback"></span>

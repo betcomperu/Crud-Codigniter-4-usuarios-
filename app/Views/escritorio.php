@@ -6,12 +6,35 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Escritorio</h1>
+            <h1 class="m-0 text-dark">Panel de <?php 
+          switch (session()->get('rol')) {
+            case '1':
+              echo "Administrador";
+              break;
+              case '2':
+                echo "Vendedor";
+                break;
+                case '3':
+                  echo "Usuario";
+                  break;
+                  case '4':
+                    echo "Visitante";
+                    break;
+                    case '5':
+                      echo "Supervisor";
+                      break;
+            
+            default:
+              # code...
+              break;
+          }
+          
+          ?></h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -120,7 +143,7 @@
           <!-- right col (We are only adding the ID to make the widgets sortable)-->
           <section class="col-lg-5 connectedSortable">
 
-        >
+      
 
             <!-- solid sales graph -->
             <div class="card bg-gradient-info">

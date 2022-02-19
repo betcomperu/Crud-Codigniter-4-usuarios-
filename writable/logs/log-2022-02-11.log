@@ -1,0 +1,141 @@
+CRITICAL - 2022-02-11 16:31:13 --> syntax error, unexpected '}', expecting ';' or ','
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-11 16:31:14 --> syntax error, unexpected '}', expecting ';' or ','
+#0 C:\laragon\www\europharmaci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('login')
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-11 16:32:56 --> Invalid file: login/entrar.php
+#0 C:\laragon\www\europharmaci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login/entrar.ph...')
+#1 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('login/entrar', Array, true)
+#2 C:\laragon\www\europharmaci4\app\Controllers\Login.php(49): view('login/entrar', Array)
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-11 18:47:19 --> Invalid file: usuarios.php
+#0 C:\laragon\www\europharmaci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios.php')
+#1 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('usuarios', Array, true)
+#2 C:\laragon\www\europharmaci4\app\Controllers\Login.php(56): view('usuarios', Array)
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-11 18:48:15 --> Invalid file: usuarios/registrar.php
+#0 C:\laragon\www\europharmaci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/regist...')
+#1 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('usuarios/regist...', Array, true)
+#2 C:\laragon\www\europharmaci4\app\Controllers\Login.php(56): view('usuarios/regist...', Array)
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-11 18:50:56 --> Call to undefined function display_error()
+#0 C:\laragon\www\europharmaci4\system\View\View.php(210): include()
+#1 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/login', Array, true)
+#3 C:\laragon\www\europharmaci4\app\Controllers\Login.php(56): view('Usuario/login', Array)
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-11 18:52:28 --> Call to undefined function display_error()
+#0 C:\laragon\www\europharmaci4\system\View\View.php(210): include()
+#1 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/login', Array, true)
+#3 C:\laragon\www\europharmaci4\app\Controllers\Login.php(56): view('Usuario/login', Array)
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-11 18:52:29 --> Call to undefined function display_error()
+#0 C:\laragon\www\europharmaci4\system\View\View.php(210): include()
+#1 C:\laragon\www\europharmaci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\europharmaci4\system\Common.php(1094): CodeIgniter\View\View->render('Usuario/login', Array, true)
+#3 C:\laragon\www\europharmaci4\app\Controllers\Login.php(56): view('Usuario/login', Array)
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#5 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-11 18:56:53 --> Call to a member function withRequest() on bool
+#0 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#1 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-11 21:38:59 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, object given, called in C:\laragon\www\europharmaci4\system\Controller.php on line 160
+#0 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(56): CodeIgniter\Controller->validate(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-11 21:41:14 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, object given, called in C:\laragon\www\europharmaci4\system\Controller.php on line 160
+#0 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(55): CodeIgniter\Controller->validate(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-11 21:41:16 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, object given, called in C:\laragon\www\europharmaci4\system\Controller.php on line 160
+#0 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(55): CodeIgniter\Controller->validate(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-11 21:41:51 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, object given, called in C:\laragon\www\europharmaci4\system\Controller.php on line 160
+#0 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(55): CodeIgniter\Controller->validate(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-11 21:41:58 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, object given, called in C:\laragon\www\europharmaci4\system\Controller.php on line 160
+#0 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(55): CodeIgniter\Controller->validate(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-11 21:43:35 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, object given, called in C:\laragon\www\europharmaci4\system\Controller.php on line 160
+#0 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(54): CodeIgniter\Controller->validate(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-11 21:43:37 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, object given, called in C:\laragon\www\europharmaci4\system\Controller.php on line 160
+#0 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(54): CodeIgniter\Controller->validate(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-11 21:45:11 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, object given, called in C:\laragon\www\europharmaci4\system\Controller.php on line 160
+#0 C:\laragon\www\europharmaci4\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\laragon\www\europharmaci4\app\Controllers\Login.php(54): CodeIgniter\Controller->validate(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#2 C:\laragon\www\europharmaci4\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

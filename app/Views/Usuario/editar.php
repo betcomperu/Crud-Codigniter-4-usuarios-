@@ -43,7 +43,8 @@
  
 </div>
    <form action="<?php echo base_url('/usuarios/update')."/" .$usuarios->idusuario ?>" method="post" enctype="multipart/form-data">
-   <input type="hidden" name="_method" value="PUT"/>
+   <!-- <input type="hidden" name="_method" value="PUT"/> -->
+   <?= csrf_field();?>
      <div class="form-group has-feedback">
        <input type="text" value="<?= $usuarios->nombre?>" id="nombre" name="nombre" class="form-control" placeholder="Nombre y Apellidos">
        <span class="glyphicon glyphicon-user form-control-feedback"></span>

@@ -12,8 +12,8 @@ use CodeIgniter\Filters\SecureHeaders;
 class Filters extends BaseConfig
 {
     /**
-     * Configures aliases for Filter classes to
-     * make reading things nicer and simpler.
+     * Configura alias para las clases de filtro para
+     * Hacer que la lectura sea más agradable y sencilla.
      *
      * @var array
      */
@@ -23,11 +23,12 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'FilterAdmin' => \App\Filters\FilterAdmin::class  // Se agrega el filtro creado 
     ];
 
     /**
-     * List of filter aliases that are always
-     * applied before and after every request.
+     * Lista de alias de filtro que siempre están
+     * aplicado antes y después de cada solicitud.
      *
      * @var array
      */
@@ -36,28 +37,35 @@ class Filters extends BaseConfig
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
+            'FilterAdmin' => [
+                'except' => ['login/*', 'login', '/']
+            ]
         ],
         'after' => [
-            'toolbar',
+
             // 'honeypot',
             // 'secureheaders',
+            'FilterAdmin' => [
+                'except' => ['Home/*', 'Home', '/']
+            ]
         ],
+        'toolbar',
     ];
 
     /**
-     * List of filter aliases that works on a
-     * particular HTTP method (GET, POST, etc.).
+     * Lista de alias de filtro que funciona en un
+     * método HTTP particular (GET, POST, etc.).
      *
-     * Example:
-     * 'post' => ['csrf', 'throttle']
+     * Ejemplo:
+     * 'publicar' => ['csrf', 'acelerador']
      *
      * @var array
      */
     public $methods = [];
 
     /**
-     * List of filter aliases that should run on any
-     * before or after URI patterns.
+     * Lista de alias de filtro que deben ejecutarse en cualquier
+     * antes o después de los patrones URI.
      *
      * Example:
      * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]

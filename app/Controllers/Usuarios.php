@@ -5,6 +5,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\UsuarioModel;
 use App\Models\RolesModel;
+use App\libraries\Hash;
 use App\Controllers\BaseController;
 use Config\Services\session;
 use CodeIgniter\Files\File;
@@ -21,6 +22,7 @@ class Usuarios extends Controller
         $users = new UsuarioModel();
         $roles = new RolesModel();
         $this->session = \Config\Services::session();
+        helper(['url', 'form']);
     }
 
     /*
@@ -127,7 +129,7 @@ class Usuarios extends Controller
             'nombre' => $this->request->getPost('nombre'),
             'correo' => $this->request->getPost('correo'),
             'usuario' => $this->request->getPost('usuario'),
-            'clave' => md5($this->request->getPost('password')),
+            'clave' => Hash::hacer($this->request->getPost('password')),
             'rol' => $this->request->getPost('rol'),
             'foto' => $imageName
         ]);
@@ -153,10 +155,6 @@ class Usuarios extends Controller
 
         $file = $this->request->getPost('foto');
 
-
-
-
-
         $data = [
             'titulo' => 'Editar Usuario',
             'usuarios' => $users->asObject()->select('*')->join('rol', 'rol.idrol=usuario.rol', 'left')->find($id),
@@ -180,17 +178,17 @@ class Usuarios extends Controller
         // echo $foto_item['foto']; // Imprimimos para ver el campo "foto"
 
         $old_foto = $foto_item['foto'];
- 
+
         if ($file = $this->request->getFile('foto')) {
             if ($file->isValid() && !$file->hasMoved()) {
                 $imageName = $file->getRandomName();
                 $file->move('uploads/', $imageName);
-            }else{
+            } else {
                 $imageName = $old_foto;
             }
-                //$imageName = "default.png";
-                //unlink("uploads/" . $old_foto);
-            
+            //$imageName = "default.png";
+            //unlink("uploads/" . $old_foto);
+
         }
 
         $data = [
@@ -198,7 +196,7 @@ class Usuarios extends Controller
             'nombre' => $this->request->getPost('nombre'),
             'correo' => $this->request->getPost('correo'),
             'usuario' => $this->request->getPost('usuario'),
-            'clave' => md5($this->request->getPost('password')),
+            'clave' => Hash::hacer($this->request->getPost('password')),
             'rol' => $this->request->getPost('rol'),
             'foto' => $imageName
         ];
@@ -266,4 +264,5 @@ class Usuarios extends Controller
         $users->update($id, $data);
         return redirect()->to(base_url() . '/usuarios');
     }
+
 }

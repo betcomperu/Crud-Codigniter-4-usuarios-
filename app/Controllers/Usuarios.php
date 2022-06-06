@@ -161,6 +161,8 @@ class Usuarios extends Controller
             'roles' => $roles->select('*')->findAll()
 
         ];
+
+
         echo view('plantillas/header');
         echo view('plantillas/top-menu');
         echo view('plantillas/aside');
@@ -186,20 +188,27 @@ class Usuarios extends Controller
             } else {
                 $imageName = $old_foto;
             }
-            //$imageName = "default.png";
-            //unlink("uploads/" . $old_foto);
-
         }
 
-        $data = [
+        if ($this->request->getPost('password') == null) {
 
-            'nombre' => $this->request->getPost('nombre'),
-            'correo' => $this->request->getPost('correo'),
-            'usuario' => $this->request->getPost('usuario'),
-            'clave' => Hash::hacer($this->request->getPost('password')),
-            'rol' => $this->request->getPost('rol'),
-            'foto' => $imageName
-        ];
+            $data = [
+                'nombre' => $this->request->getPost('nombre'),
+                'correo' => $this->request->getPost('correo'),
+                'usuario' => $this->request->getPost('usuario'),
+                'rol' => $this->request->getPost('rol'),
+                'foto' => $imageName
+            ];
+        } else {
+            $data = [
+                'nombre' => $this->request->getPost('nombre'),
+                'correo' => $this->request->getPost('correo'),
+                'usuario' => $this->request->getPost('usuario'),
+                'clave' => Hash::hacer($this->request->getPost('password')),
+                'rol' => $this->request->getPost('rol'),
+                'foto' => $imageName
+            ];
+        }
         $users->update($id, $data);
 
         session()->setFlashdata('editado', " El usuario ha sido Actualizado");
@@ -264,5 +273,4 @@ class Usuarios extends Controller
         $users->update($id, $data);
         return redirect()->to(base_url() . '/usuarios');
     }
-
 }

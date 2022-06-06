@@ -214,3 +214,11 @@ CRITICAL - 2022-02-18 20:22:39 --> filterAdmin filter must have a matching alias
 #4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2022-02-18 20:44:05 --> FilterUsuario filter must have a matching alias defined.
+#0 C:\laragon\www\europharmaci4\system\Filters\Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('FilterUsuario')
+#1 C:\laragon\www\europharmaci4\system\Filters\Filters.php(244): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 C:\laragon\www\europharmaci4\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('login/index')
+#3 C:\laragon\www\europharmaci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('login/index', 'before')
+#4 C:\laragon\www\europharmaci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\europharmaci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

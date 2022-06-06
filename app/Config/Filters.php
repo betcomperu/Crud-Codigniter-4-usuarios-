@@ -23,7 +23,8 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
-        'FilterAdmin' => \App\Filters\FilterAdmin::class  // Se agrega el filtro creado 
+        'FilterAdmin' => \App\Filters\FilterAdmin::class,  // Se agrega el filtro creado 
+        'FilterUsuario' => \App\Filters\FilterUsuario::class  // Se agrega el filtro creado 
     ];
 
     /**
@@ -39,6 +40,9 @@ class Filters extends BaseConfig
             // 'invalidchars',
             'FilterAdmin' => [
                 'except' => ['login/*', 'login', '/']
+            ],
+            'FilterUsuario' => [
+                'except' => ['login/*', 'login', '/']
             ]
         ],
         'after' => [
@@ -46,8 +50,10 @@ class Filters extends BaseConfig
             // 'honeypot',
             // 'secureheaders',
             'FilterAdmin' => [
-                'except' => ['Home/*', 'Home', '/']
-            ]
+                'except' => ['Home/*', 'Home', '/','usuarios/*','usuarios','/']
+            ],
+            'FilterUsuario' => [
+                'except' => ['Home/*']]
         ],
         'toolbar',
     ];
